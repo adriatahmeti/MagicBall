@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TopiMagjik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topiFillo" translatesAutoresizingMaskIntoConstraints="NO" id="rQd-Vs-mZD">
+                                <rect key="frame" x="16" y="39" width="343" height="315"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="315" id="1uB-4M-E7m"/>
+                                    <constraint firstAttribute="width" constant="343" id="Xzh-iP-7Rh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ob-6t-8ja">
+                                <rect key="frame" x="114" y="440" width="147" height="74"/>
+                                <color key="backgroundColor" red="0.0" green="0.0089813166343825981" blue="0.93034184644670048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="NNg-Pf-Ctl"/>
+                                    <constraint firstAttribute="height" constant="74" id="VSL-Qb-GO0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="LUAJ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buLuaj:" destination="BYZ-38-t0r" eventType="touchUpInside" id="By0-6O-DU4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Ob-6t-8ja" firstAttribute="top" secondItem="rQd-Vs-mZD" secondAttribute="bottom" constant="86" id="000-gg-xc5"/>
+                            <constraint firstItem="4Ob-6t-8ja" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="1wK-T1-07r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Ob-6t-8ja" secondAttribute="trailing" constant="114" id="6Ry-L1-G7w"/>
+                            <constraint firstItem="rQd-Vs-mZD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="EGZ-Rj-jva"/>
+                            <constraint firstItem="rQd-Vs-mZD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XhA-El-LG8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rQd-Vs-mZD" secondAttribute="trailing" constant="16" id="bZq-AZ-JZ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Ob-6t-8ja" secondAttribute="bottom" constant="153" id="uN3-7b-2Nd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fotoTopi" destination="rQd-Vs-mZD" id="A1f-o6-UoE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="topiFillo" width="460" height="412"/>
+    </resources>
+</document>
